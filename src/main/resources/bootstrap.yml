@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: file:D:/git_resources/video-config/
+#    config:
+#      native:
+#        searchLocation: 'file:D:/git_resources/video-config/'
+#      server:
+#        git:
+#          uri: http://bj.gitlab.cnlive.com/cms/icms_maven.git
+#          searchPaths: template-web/src/test/yml
+#         
